@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <title>canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="jason">
+    <link id="bs-css" href="canvas.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="allTesting">
+	<div class="testing">
+		<canvas class="y_axis_canvas" id="myYAxisCanvas3" width="41" height="127"></canvas>
+		<span class="type mid">param1</span>
+		<span class="value" id="param1">-</span>
+		<span class="type">%</span>
+		<span class="graph"><canvas id="myCanvas3" width="740" height="107"></canvas></span>
+	</div>
+
+	<div class="testing sndrow">
+		<canvas class="y_axis_canvas" id="myYAxisCanvas1" width="41" height="127"></canvas>
+
+		<span class="type mid">param2</span>
+		<span class="value" id="param2">-</span>
+		<span class="type">%</span>
+
+		<span class="graph"><canvas id="myCanvas1" width="740" height="107"></canvas></span>
+	</div>
+	
+	<div class="testing">
+		<canvas class="y_axis_canvas" id="myYAxisCanvas2" width="41" height="127"></canvas>
+		<span class="type mid">param3</span>
+		<span class="value" id="param3">-</span>
+		<span class="graph"><canvas id="myCanvas2" width="740" height="107"></canvas></span>
+	</div>
+	
+	<div class="testing sndrow">
+		<canvas class="y_axis_canvas" id="myYAxisCanvas4" width="41" height="127"></canvas>
+		<span class="type mid">param4</span>
+		<span class="value" id="param4">-</span>
+		<span class="graph"><canvas id="myCanvas4" width="740" height="107"></canvas></span>
+	</div>
+
+	<div class="testing" style="height:auto;">
+		<canvas class="x_axis_canvas" id="myTAxisCanvas" width="803" height="26"></canvas>
+	</div>
+</div>
+
+<div class="rowTesting" style="margin: 0;">
+	<div class="colTesting" style="width: 163px;">
+		<span class="button" style="margin: 0;">
+		   <a href="javascript:;" onclick="toggle();">切换视图</a> 
+		   <a href="javascript:;" onclick="getData();">获取数据</a> 
+		</span>
+	</div>
+</div>
+
+
+
+
+<script src="jquery-1.7.2.min.js"></script>
+<script src="canvas.js"></script>
+</body>
+</html>

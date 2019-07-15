@@ -1,0 +1,101 @@
+.testing {
+    position:relative;
+    clear:both;
+    float:left;
+    width:858px;
+    margin: 0 0 0 0;
+    padding:0;
+    padding-top:10px;
+    height:117px;
+    background-color:#f8f8f8;
+}
+.testing.sndrow {
+    background-color:#e5e5e5;
+}
+.testing .type {
+    clear:both;
+    float:left;
+    height: 15px;
+    width: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 4px 14px 4px 3px;
+    margin:0;
+    text-align: center;
+    color:#333;
+    text-shadow: 1px 1px 0 #fff;
+}
+.testing .type.mid {
+    margin-top:15px;
+}
+.testing .value {
+    clear:both;
+    float:left;
+    width: 51px;
+    font-size:20px;
+    text-align: center;
+    background-color: #395B73;
+   // background-color: #42a1da;
+    color:#fff;
+    padding:0;
+    margin:4px 0 5px 3px;
+    text-align:center;
+    text-shadow: 1px 1px 0 #000000;
+    -moz-box-shadow:  1px 1px 3px #ccc;
+    -webkit-box-shadow: 1px 1px 3px #ccc;
+    box-shadow:         1px 1px 3px #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.testing .y_axis_canvas {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+    background: transparent;
+}
+.x_axis_canvas {
+
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 57px;
+    background: transparent;
+}
+
+.testing .arrows {
+    left: 0;
+    margin: 0 0 0 3px;
+    clear:both;
+    float:left;
+    width: 64px;
+}
+.testing .graph {
+    position:relative;
+    left: 2px;
+    padding: 0;
+    width: 790px;
+}
+
+#myCanvas1 {
+    margin-left: 29px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    background: #e5e5e5;
+
+}
+#myCanvas2 {
+    margin-left: 29px;
+    border: 1px solid #000;
+
+}
+#myCanvas3 {
+    margin-left: 29px;
+    border: 1px solid #000;
+    background: #f5f5f5;
+}
+#myCanvas4 {
+    margin-left: 29px;
+    border: 1px solid #000;
+    background: #e5e5e5;
+}

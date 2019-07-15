@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <title>mycanvas</title>
+</head>
+<body>
+
+	<div>
+	<h2>line canvas</h2>
+		<canvas id="myCanvas" width="300" height="200" style="border:1px solid #ccc;"></canvas>
+	</div>
+
+
+<script src="jquery-1.7.2.min.js"></script>
+<script>
+  window.onload = function () {
+            var arr = [40, 50, 30, 70, 80, 40, 90, 60, 80, 60, 69, 80, 80, 40, 50, 30, 70, 80, 40, 77, 80, 70, 60, 50, 80];
+            drawLine.minCurve(arr);
+        } 
+
+        var drawLine = {};
+        !function () {           
+            //求数组最大值
+            Array.prototype.max = function () {
+                var max = this[0];
+                var len = this.length;
+                for (var i = 1; i < len; i++) {
+                    if (this[i] > max) {
+                        max = this[i];
+                    }
+                }
+                return max;
+            }
+            function draw(arr) {                
+                var width = 300, height = 200;
+                var maxV = arr.max();
+                //计算y轴增量
+                var yStep = height / maxV;
+                console.log(maxV);
+                var domCan = document.getElementById("myCanvas");
+                var context = domCan.getContext("2d");       
+                context.beginPath();
+                context.lineWidth = 2;
+                context.strokeStyle = "#395B73";
+                //context.moveTo(0, 0);//开始画图的位置
+                var x_space = width / (arr.length - 1);//水平点的间隙像素           
+                //context.lineTo(15, 60); x表示水平向右延伸，y表示垂直高度位置，从画板最左上角(0,0)开始计算坐标
+                var xLen = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    var yValue = arr[i];//纵坐标值
+                    xLen += x_space;
+                    var yPont = height - yValue * yStep;
+                    if (i == 0) {
+                        xLen = 0;
+                    }
+                    var m = xLen + "," + yPont;
+                    console.log(m);
+                    context.lineTo(xLen, yPont);
+                }        
+                context.stroke();
+                context.closePath();
+            }
+            drawLine.minCurve = draw;
+        }();
+      
+</script>
+</body>
+</html>
